@@ -1,8 +1,17 @@
+header {
+  background-color: coral;
+}
+
 p {
-  color: indigo;
+  color: white;
   font-family: sans-serif;
+  display: inline;
 }
 
 nav {
   float: right;
+}
+
+a {
+  color: white;
 }
