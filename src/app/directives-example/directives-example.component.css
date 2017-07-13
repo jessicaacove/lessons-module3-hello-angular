@@ -1,0 +1,22 @@
+section {
+  border: 3px navy groove;
+}
+
+.div {
+  border: 1px solid navy;
+}
+
+.big {
+  font-size: 75px;
+  padding: 30px;
+}
+
+.colorful {
+  border: 20px solid pink;
+  background-color: darksalmon;
+  color: navy;
+}
+
+.comic {
+  font-family: "Comic Sans MS", cursive;
+}

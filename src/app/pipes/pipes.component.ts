@@ -13,6 +13,16 @@ export class PipesComponent implements OnInit {
 
   currentBitCoinInvestment: number = 100000;
 
+  rockSearchText: string = "";
+
+  theRocks: object[] = [
+    { name: 'turtlenecktherock', pictureUrl: 'https://media.giphy.com/media/AjkKC77JZVCEg/giphy.gif'},
+    { name: 'eyebrowtherock', pictureUrl: 'https://media.giphy.com/media/TT7JW4Qm7uaNW/giphy.gif'},
+    { name: 'napoleandynamitetherock', pictureUrl: 'https://media.giphy.com/media/rYQU4kqwz0wAo/giphy.gif'},
+    { name: 'smugtherock', pictureUrl: 'https://media.giphy.com/media/l0NwPZ027mabR6Tg4/giphy.gif'},
+    { name: 'clappingtherock', pictureUrl: 'https://media.giphy.com/media/NnGGHE0muVqpO/giphy.gif'}
+  ];
+
   constructor() { }
 
   ngOnInit() {

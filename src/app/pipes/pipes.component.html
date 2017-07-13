@@ -12,4 +12,14 @@
   <button (click)="addOneHour()"> Add an hour </button>
 
   <p> {{ currentBitCoinInvestment | currency: 'EUR':true }} </p>
+
+  <label for="rock-search"> Search for your The Rock </label>
+  <input id="rock-search" type="search" [(ngModel)]="rockSearchText">
+
+  <ul>
+    <li *ngFor='let oneRock of (theRocks | doTheSearch:rockSearchText)'>
+      <h4> {{ oneRock.name }} </h4>
+      <img [src]="oneRock.pictureUrl">
+    </li>
+  </ul>
 </section>

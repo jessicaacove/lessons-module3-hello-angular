@@ -1,0 +1,45 @@
+<section>
+  <h3> Directives Example </h3>
+
+  <button (click)="buttonA()"> Toggle Size </button>
+  <button (click)="buttonB()"> Toggle Color </button>
+  <button (click)="buttonC()"> Toggle Font </button>
+
+  <div [ngClass]="{ big: isBigSize, colorful: hasColor, comic: isComic }">
+    <p> Oh
+      Once upon a midnight dreary
+      I woke with something in my head
+      I couldn't escape the memory
+      Of a phone call and of what you said
+    </p>
+  </div>
+
+
+  <select [(ngModel)]="dropdownSelection">
+    <option value="">Choose Your Pizza Style</option>
+    <option value="nyc">New York Style</option>
+    <option value="deep">Deep Dish</option>
+    <option value="thin">Thin Crust</option>
+    <option value="wood">Wood Oven</option>
+    <option value="chi">Chicago Style</option>
+  </select>
+
+<h4> {{ dropdownSelection }} </h4>
+
+<!-- for string you need '' in your "" -->
+<div [ngSwitch]="dropdownSelection">
+  <div *ngSwitchCase="'nyc'">
+    <img src="https://media.giphy.com/media/3oFyD4xKncK6ptR7qg/giphy.gif">
+  </div>
+  <div *ngSwitchCase="'deep'">
+    <img src="https://media.giphy.com/media/n0gFpvaXqUskU/giphy.gif">
+  </div>
+  <div *ngSwitchCase="''">
+  </div>
+  <div *ngSwitchDefault>
+    <h4> Cool stuff. </h4>
+  </div>
+</div>
+
+
+</section>
